@@ -46,7 +46,7 @@
 
 {%- block content %}
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm">
           {{ sphinxsidebar() }}
@@ -55,6 +55,8 @@
             {%- block document %}
                 {% block body %} {% endblock %}
             {%- endblock %}
+
+            {% include "prevnext.html" %}
         </div>
       </div>
     </div>
