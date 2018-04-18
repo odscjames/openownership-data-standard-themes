@@ -29,20 +29,17 @@
 
 {%- macro sphinxsidebar() %}
       {%- if render_sidebar %}
-          <div class="">
-            <div class="">
-
-                <div class="beta">
-                    BETA
-                </div>
-                {%- block sidebarsearch %}
-                    {%- include "searchbox.html" %}
-                {%- endblock %}
-                {%- block sidebartoc %}
-                    {%- include "globaltoc.html" %}
-                {%- endblock %}
-            </div>
-          </div>
+        <div class="beta mb-3">
+            BETA
+        </div>
+        <div class="px-3">
+            {%- block sidebarsearch %}
+                {%- include "searchbox.html" %}
+            {%- endblock %}
+            {%- block sidebartoc %}
+                {%- include "globaltoc.html" %}
+            {%- endblock %}
+        </div>
       {%- endif %}
 {%- endmacro %}
 
@@ -52,10 +49,10 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm">
+        <div class="col-md-2 mx-0 px-0">
           {{ sphinxsidebar() }}
         </div>
-        <div class="col-sm">
+        <div class="col-md-10">
             {%- block document %}
                 {% block body %} {% endblock %}
             {%- endblock %}
