@@ -53,6 +53,8 @@
           {{ sphinxsidebar() }}
         </div>
         <div class="col-md-10">
+            {% include "breadcrumbsedit.html" %}
+
             {%- block document %}
                 {% block body %} {% endblock %}
             {%- endblock %}
