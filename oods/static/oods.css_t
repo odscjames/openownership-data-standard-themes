@@ -28,3 +28,8 @@
 .btn-outline {
     border: 1px solid #ddd;
 }
+
+h1 {
+    color: #00788a;
+    font-weight: bold;
+}
