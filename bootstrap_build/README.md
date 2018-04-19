@@ -20,6 +20,7 @@ Then install needed packages
 
 To build run
 
+    cp src/_variables.scss  bootstrap/scss/_variables.scss 
     grunt sass
 
 
