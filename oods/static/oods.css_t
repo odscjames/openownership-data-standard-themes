@@ -38,5 +38,12 @@ h1 {
     color: #00788a;
 }
 
+table.docutils {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+table.docutils thead tr {
+    background: #eceeef;
+}
 
