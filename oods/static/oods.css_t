@@ -33,3 +33,10 @@ h1 {
     color: #00788a;
     font-weight: bold;
 }
+
+.oods-breadcrumbs-parent {
+    color: #00788a;
+}
+
+
+
