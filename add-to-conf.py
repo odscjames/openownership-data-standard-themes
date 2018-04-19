@@ -7,10 +7,17 @@ html_theme_path = [os.path.join(os.path.dirname(os.path.realpath(__file__)), '..
 
 ###################################################### Pygments Style
 # https://stackoverflow.com/questions/48615629/how-to-include-pygments-styles-in-a-sphinx-project
-"""
+
+from pygments.style import Style
+from pygments.token import Keyword, Name, Comment, String, Error, \
+     Number, Operator, Generic, Whitespace
+
 class OODSStyle(Style):
     background_color = "#fbfbfb"
     default_style = ""
+    styles = {
+        String: "#d9534f"
+    }
 
 
 def pygments_monkeypatch_style(mod_name, cls):
@@ -27,5 +34,5 @@ def pygments_monkeypatch_style(mod_name, cls):
 
 pygments_monkeypatch_style("oods", OODSStyle)
 pygments_style = "oods"
-"""
+
 
