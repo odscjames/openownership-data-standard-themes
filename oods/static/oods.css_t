@@ -7,3 +7,17 @@
 .navbar .navbar-nav .active a {
     border-bottom: 2px solid #fdd106;
 }
+
+.admonition.note {
+    border-left: 5px solid #56c0e0;
+    background: #edf8fb;
+    padding: 10px;
+}
+
+
+.admonition.attention, .admonition.warning {
+    border-left: 5px solid #f0ad4e;
+    background: #fcf7e4;
+    padding: 10px;
+}
+
