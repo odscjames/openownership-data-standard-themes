@@ -47,3 +47,9 @@ table.docutils thead tr {
     background: #eceeef;
 }
 
+
+.sidebartoctree li.toctree-l1 > a {
+    display: none;
+}
+
+
